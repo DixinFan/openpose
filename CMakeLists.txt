@@ -428,8 +428,7 @@ if (UNIX OR APPLE)
   endif (${GPU_MODE} MATCHES "CUDA")
   find_package(GFlags) # For Caffe and OpenPose
   find_package(Glog) # For Caffe
-  find_package(PythonInterp 3.6 REQUIRED)
-  find_package(PythonLibs 3.6 REQUIRED)
+  find_package (Python3 COMPONENTS Interpreter Development)
   find_package(Protobuf REQUIRED) # For Caffe
 
   if (OpenCV_CONFIG_FILE)
